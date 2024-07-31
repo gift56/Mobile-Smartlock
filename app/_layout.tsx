@@ -3,6 +3,7 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import "react-native-reanimated";
+import { UserInactivityProvider } from "@/context/UserInactivity";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -23,8 +24,27 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name="index" />
-    </Stack>
+    // <UserInactivityProvider>
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="(modals)/white"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="(modals)/lock"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+    // </UserInactivityProvider>
   );
 }
