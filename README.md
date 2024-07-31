@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# SmartLock
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SmartLock is a secure and intuitive mobile application developed using Expo, React Native, and TypeScript. It leverages local authentication, including Face ID, to provide a seamless and secure user experience.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Face ID Authentication**: Utilizes `expo-local-authentication` to support Face ID.
+- **Adaptive Icons**: Custom icons for Android and iOS.
+- **Responsive Layout**: Optimized for both portrait and landscape orientations.
+- **Cross-Platform Support**: Compatible with iOS, Android, and Web.
+
+## Installation
+
+1. **Clone the repository:**
 
    ```bash
-   npm install
+   git clone https://github.com/gift56/Mobile-Smartlock.git
+   cd smartlock
+
    ```
 
-2. Start the app
+2. **Install dependencies:**
 
    ```bash
-    npx expo start
+      npm install
    ```
 
-In the output, you'll find options to open the app in a
+3. **Start the development server:**
+   ```bash
+    npm start or npx expo start -c
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Folder Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The project includes the following main folders:
 
-## Get a fresh project
+- **assets/**: Contains images and other static resources.
+- **src/**: Contains the source code of the application.
+- **context/**: Contains the context file for monitoring app background changes.
 
-When you're ready, run:
+## Contributing
 
-```bash
-npm run reset-project
-```
+If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
