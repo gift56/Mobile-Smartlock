@@ -24,7 +24,7 @@ export default function RootLayout() {
   }
 
   return (
-    // <UserInactivityProvider>
+    <UserInactivityProvider>
       <Stack>
         <Stack.Screen
           name="index"
@@ -36,15 +36,17 @@ export default function RootLayout() {
           name="(modals)/white"
           options={{
             headerShown: false,
+            animation: "none",
           }}
         />
         <Stack.Screen
           name="(modals)/lock"
           options={{
             headerShown: false,
+            animation: "none",
           }}
         />
       </Stack>
-    // </UserInactivityProvider>
+    </UserInactivityProvider>
   );
 }
