@@ -35,7 +35,7 @@ SmartLock is a secure and intuitive mobile application developed using Expo, Rea
 The project includes the following main folders:
 
 - **assets/**: Contains images and other static resources.
-- **src/**: Contains the source code of the application.
+- **app/**: Contains the source code of the application.
 - **context/**: Contains the context file for monitoring app background changes.
 
 ## Contributing
